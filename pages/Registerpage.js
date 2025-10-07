@@ -50,10 +50,10 @@ const handleChange =(field, value) => {
                 value={formData.gender}
                 onChangeText={(text) => handleChange("gender",text)} />
 
-            <Button // Changed to Button
-                title="Review and Submit" // Added title prop
+            <Button 
+                title="Review and Submit" 
                 onPress={() => navigation.navigate("Review", {formData})}
-                color="#809bce" // Added color prop to match your style
+                color="#809bce" 
             />
         </View>
     )

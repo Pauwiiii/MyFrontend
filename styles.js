@@ -1,3 +1,4 @@
+import { use } from "react";
 import {StyleSheet} from "react-native";
 
 export default StyleSheet.create({
@@ -12,10 +13,10 @@ export default StyleSheet.create({
   },
   container: {
     flex: 1,
-    padding: 300,
+    padding: 150,
     backgroundColor: '#d6eadf',
-    justifyContent: 'center',
   },
+
   input: {
     borderWidth: 1,
     borderColor: '#95b8d1',
@@ -60,4 +61,18 @@ export default StyleSheet.create({
     color: '#809bce',
     marginBottom: 8,
   },
-})
+
+userlist: {
+  backgroundColor: '#eac4d5',
+  borderRadius: 14,
+  padding: 20,
+  marginHorizontal: 20,
+  marginBottom: 15,
+  shadowColor: '#809bce',
+  shadowOpacity: 0.15,
+  shadowOffset: { width: 0, height: 3 },
+  shadowRadius: 5,
+  elevation: 3,
+},
+
+  });

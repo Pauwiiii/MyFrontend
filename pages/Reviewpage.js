@@ -26,16 +26,16 @@ export default function ReviewPage({route, navigation}) {
             <Text style={styles.reviewText}>Password: {formData.password}</Text>
             <Text style={styles.reviewText}>Gender: {formData.gender}</Text>
 
-            <Button // Changed to Button
-                title="Go Back to Edit" // Added title prop
+            <Button
+                title="Go Back to Edit" 
                 onPress={() => navigation.goBack()}
-                color="#809bce" // Added color prop to match your style
+                color="#809bce" 
             />
            
-            <Button // Changed to Button
-                title="Submit" // Added title prop
+            <Button 
+                title="Submit"
                 onPress={handleSubmit}
-                color="#809bce" // Added color prop to match your style
+                color="#809bce"
             />
         </View>
     );
