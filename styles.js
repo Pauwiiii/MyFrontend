@@ -1,5 +1,6 @@
 import { use } from "react";
 import {StyleSheet} from "react-native";
+import { Button } from "react-native-web";
 
 export default StyleSheet.create({
   title: {
@@ -9,12 +10,15 @@ export default StyleSheet.create({
     color: '#809bce',
     marginBottom: 16,
     letterSpacing: 1,
-   
   },
   container: {
     flex: 1,
     padding: 150,
     backgroundColor: '#d6eadf',
+  },
+
+  buttonContainer: {
+    marginTop: 10,
   },
 
   input: {

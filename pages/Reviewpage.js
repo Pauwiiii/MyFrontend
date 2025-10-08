@@ -26,13 +26,13 @@ export default function ReviewPage({route, navigation}) {
             <Text style={styles.reviewText}>Password: {formData.password}</Text>
             <Text style={styles.reviewText}>Gender: {formData.gender}</Text>
 
-            <Button
+            <Button style={styles.buttonContainer}
                 title="Go Back to Edit" 
                 onPress={() => navigation.goBack()}
                 color="#809bce" 
             />
            
-            <Button 
+            <Button style={styles.buttonContainer}
                 title="Submit"
                 onPress={handleSubmit}
                 color="#809bce"
