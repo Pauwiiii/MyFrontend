@@ -8,7 +8,7 @@ export default function ReviewPage({route, navigation}) {
     const handleSubmit = async () => {
         try {
             const response = await axios.post(
-                "http://127.0.0.1:8000/registration/api/register/",
+                "http://192.168.30.241:8000/registration/api/register/",
                 formData);
             Alert.alert("Success", "User Registered Successfully");
             navigation.goBack();

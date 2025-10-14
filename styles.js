@@ -13,8 +13,9 @@ export default StyleSheet.create({
   },
   container: {
     flex: 1,
-    padding: 150,
+    padding: 50,
     backgroundColor: '#d6eadf',
+    alignItems: 'center',
   },
 
   buttonContainer: {
@@ -53,7 +54,7 @@ export default StyleSheet.create({
     backgroundColor: '#b8e0d2',
     borderRadius: 14,
     padding: 50,
-    margin: 200,
+    margin: 50,
     shadowColor: '#809bce',
     shadowOpacity: 0.10,
     shadowOffset: { width: 0, height: 2 },

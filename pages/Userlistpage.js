@@ -1,14 +1,13 @@
-import {View, Text, FlatList, Alert} from "react-native";
+import {View, Text, FlatList, Alert, Button} from "react-native";
 import axios from "axios";
 import {useState, useEffect } from "react";
 import styles from "../styles";
-import { Button } from "react-native-web";
 
 export default function UserListPage({navigation}) {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-        axios.get("http://192.168.20.247:8082/registration/api/users/")
+        axios.get("http://192.168.30.241:8080/registration/api/users/")
         .then((res) => {
             setUsers(res.data);
         })
@@ -35,7 +34,7 @@ export default function UserListPage({navigation}) {
                     text: "Delete",
                     style: "destructive",
                     onPress: () => {
-                        axios.delete(`192.168.20.247:8082/registration/api/users/${id}/`) 
+                        axios.delete(`http://192.168.30.241:8080/registration/api/users/${id}/`) 
                         .then(() => { 
                             Alert.alert("Success", "User deleted successfully"); 
 
